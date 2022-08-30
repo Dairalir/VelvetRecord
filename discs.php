@@ -18,7 +18,7 @@
 ?>
 
 <h1>Liste des disques (<?= $result ?>)</h1>
-<a href="disc_new.php"> Ajouter</a>
+<a href="disc_new.php"><button type="button" class="btn btn-primary"> Ajouter </button></a>
     <table>
         <?php foreach ($tableau as $disc): ?>
         <tr>
@@ -29,7 +29,7 @@
             <b>Year : </b><?= $disc->disc_year ?><br>
             <b>Genre : </b><?= $disc->disc_genre ?><br>
             <!-- Ici, on ajoute un lien par artiste pour accéder à sa fiche : -->
-            <a href="disc_detail.php?id=<?= $disc->disc_id ?>">Détails</a></td>
+            <a href="disc_detail.php?id=<?= $disc->disc_id ?>"><button type="button" class="btn btn-outline-primary">Détails</button></a></td>
         </tr>
         <?php endforeach; ?>
 

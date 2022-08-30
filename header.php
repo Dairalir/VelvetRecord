@@ -12,8 +12,10 @@
 <body>
     <div class="container">
         <header>
-            
-            <nav>
-                
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="discs.php">Velvet Records</a>
+
+                </div>
             </nav>
         </header>

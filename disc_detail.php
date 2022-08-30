@@ -27,13 +27,13 @@
     <b>Year : </b> <?= $myDisc->disc_year ?>
     <b>Genre : </b> <?= $myDisc->disc_genre ?><br>
     <b>Label : </b> <?= $myDisc->disc_label ?>
-    <b>Price : </b> <?= $myDisc->disc_price ?><br>
-        <img src="src/jaquettes/<?= $myDisc->disc_picture ?>" width="300px"><br>
+    <b>Price : </b> <?= $myDisc->disc_price ?> $$ <br>
+        <img src="src/jaquettes/<?= $myDisc->disc_picture ?>" width="300px"><br><br>
         
-        <a href="disc_form.php?id=<?= $myDisc->disc_id ?>"><button>Modifier</button></a>
-        <a href="script_disc_delete.php?id=<?= $myDisc->disc_id ?>" id="delete"><button> Supprimer</button></a>
+        <a href="disc_form.php?id=<?= $myDisc->disc_id ?>"><button type="button" class="btn btn-primary">Modifier</button></a>
+        <a href="script_disc_delete.php?id=<?= $myDisc->disc_id ?>" id="delete"><button type="button" class="btn btn-primary"> Supprimer</button></a>
 
-    <a href="discs.php"><button>Retour</button></a>
+    <a href="discs.php" ><button type="button" class="btn btn-primary">Retour</button></a>
 
     <?php 
     include("footer.php");
