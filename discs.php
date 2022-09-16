@@ -10,12 +10,20 @@
     $result = $count->fetchColumn(); //recupère le nombre de ligne
     $count->closeCursor();
 
-
+    // Initialiser la session
+    session_start();
+    // Vérifiez si l'utilisateur est connecté, sinon redirigez-le vers la page de connexion
+    if(!isset($_SESSION["username"])){
+    header("Location: login.php");
+    exit(); 
+    }
 ?>
 
 <?php 
     include("header.php");
 ?>
+
+<a href="logout.php">Déconnexion</a>
 
 <h1>Liste des disques (<?= $result ?>)</h1>
 <a href="disc_new.php"><button type="button" class="btn btn-primary"> Ajouter </button></a>
